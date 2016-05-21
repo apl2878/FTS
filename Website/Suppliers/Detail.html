@@ -1,0 +1,141 @@
+﻿<!DOCTYPE html>
+<html ng-app="MeApp">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suppliers - Food Trade</title>
+    <link href="../Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="../Content/Site.css" rel="stylesheet" />
+    <script src="../Scripts/jquery-1.10.2.min.js"></script>
+    <script src="../Scripts/modernizr-2.6.2.js"></script>
+    <script src="../Scripts/respond.min.js"></script>
+    <script src="../Scripts/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="...\Index.html" target="_self">Home</a></li>
+                    <li><a href="..\Products\Index.html" target="_self">Products</a></li>
+                    <li><a href="..\Suppliers\Index.html" target="_self">Suppliers</a></li>
+                    <li><a href="..\Consumers\Index.html" target="_self">Consumers</a></li>
+                    <li><a href="..\SupplierProducts\Index.html" target="_self">Stocks</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="container body-content">
+        <div class="jumbotron">
+            <h1>Food Trade System</h1>
+            <p class="lead">A web enabled simple system to manage food supplies inside the office.</p>
+        </div>
+
+        <h2>Consumer Detail Page</h2>
+
+        <p>
+            <a href="..\Suppliers\Index.html" class="btn btn-primary btn-lg">Back</a>
+            <input type="button" id="InfoEdit" class="btn btn-primary btn-lg" value="Edit" />
+        </p>
+        <hr />
+        <div class="form-horizontal" ng-controller="MeController">
+            <div class="form-group">
+                <label for="name" class="col-sm-2 control-label">ID</label>
+                <div class="col-sm-10">
+                    {{ item.ID }}
+                </div>
+            </div>
+            <br />
+            <div class="form-group">
+                <label for="name" class="col-sm-2 control-label">Name</label>
+                <div class="col-sm-10">
+                    {{ item.Name }}
+                </div>
+            </div>
+            <br />
+            <div class="form-group">
+                <label for="name" class="col-sm-2 control-label">Address</label>
+                <div class="col-sm-10">
+                    {{ item.Address }}
+                </div>
+            </div>
+            <br />
+            <div class="form-group">
+                <label for="name" class="col-sm-2 control-label">Email</label>
+                <div class="col-sm-10">
+                    {{ item.Email }}
+                </div>
+            </div>
+            <br />
+            <div class="form-group">
+                <label for="name" class="col-sm-2 control-label">Email</label>
+                <div class="col-sm-10">
+                    {{ item.Email }}
+                </div>
+            </div>
+            <br />
+            <div class="form-group">
+                <label for="name" class="col-sm-2 control-label">Contact</label>
+                <div class="col-sm-10">
+                    {{ item.Contact }}
+                </div>
+            </div>
+            <br />
+            <div class="form-group">
+                <label for="name" class="col-sm-2 control-label">Status</label>
+                <div class="col-sm-10">
+                    {{ item.Status }}
+                </div>
+            </div>
+            <br />
+            <div class="form-group">
+                <label for="name" class="col-sm-2 control-label">Created By</label>
+                <div class="col-sm-10">
+                    {{ item.CreatedBy }}
+                </div>
+            </div>
+            <br />
+            <div class="form-group">
+                <label for="name" class="col-sm-2 control-label">Created Date</label>
+                <div class="col-sm-10">
+                    {{ item.CreatedDate }}
+                </div>
+            </div>
+            <br />
+            <div class="form-group">
+                <label for="name" class="col-sm-2 control-label">Modified By</label>
+                <div class="col-sm-10">
+                    {{ item.ModifiedBy }}
+                </div>
+            </div>
+            <br />
+            <div class="form-group">
+                <label for="name" class="col-sm-2 control-label">Modified Date</label>
+                <div class="col-sm-10">
+                    {{ item.ModifiedDate }}
+                </div>
+            </div>
+        </div>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular.min.js"></script>
+        <script src="../Scripts/foodtrade.js"></script>
+        <script>
+            $.FTCommon.LoadDetail("supplier");
+            $('#InfoEdit').click(function () {
+                window.location.href = "../Suppliers/Edit.html?ID=" + $.FTCommon.getUrlParameter('ID');
+            });
+        </script>
+        <hr />
+        <footer>
+            <p>&copy; 2016 - Angelo Lopez Application</p>
+        </footer>
+    </div>
+</body>
+</html>

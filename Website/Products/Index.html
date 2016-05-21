@@ -1,0 +1,94 @@
+﻿<!DOCTYPE html>
+<html ng-app="MeApp">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products - Food Trade</title>
+    <link href="../Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="../Content/Site.css" rel="stylesheet" />
+    <script src="../Scripts/jquery-1.10.2.min.js"></script>
+    <script src="../Scripts/modernizr-2.6.2.js"></script>
+    <script src="../Scripts/respond.min.js"></script>
+    <script src="../Scripts/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="..\Index.html" target="_self">Home</a></li>
+                    <li><a href="..\Products\Index.html" target="_self">Products</a></li>
+                    <li><a href="..\Suppliers\Index.html" target="_self">Suppliers</a></li>
+                    <li><a href="..\Consumers\Index.html" target="_self">Consumers</a></li>
+                    <li><a href="..\SupplierProducts\Index.html" target="_self">Stocks</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="container body-content">
+        <div class="jumbotron">
+            <h1>Food Trade System</h1>
+            <p class="lead">A web enabled simple system to manage food supplies inside the office.</p>
+        </div>
+
+        <h2>Product List Page</h2>
+
+        <p>
+            <a href="..\Products\New.html" class="btn btn-primary btn-lg">Create New</a>
+        </p>
+        <div>
+            <div ng-controller="MeController">
+                <table class="table">
+                    <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Description</th>
+                        <th>MSRP</th>
+                        <th>Status</th>
+                        <th></th>
+                    </tr>
+                    <tr ng-repeat="item in items">
+                        <td>
+                            {{ item.ID }}
+                        </td>
+                        <td>
+                            {{ item.Name }}
+                        </td>
+                        <td>
+                            {{ item.Description }}
+                        </td>
+                        <td>
+                            {{ item.MSRP }}
+                        </td>
+                        <td>
+                            {{ item.Status }}
+                        </td>
+                        <td>
+                            <a data-ng-href="Edit.html?ID={{item.ID}}" target="_self">Edit</a>
+                            <a data-ng-href="Detail.html?ID={{item.ID}}" target="_self">Details</a>
+                            <a data-ng-href="Delete.html?ID={{item.ID}}" target="_self">Delete</a>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular.min.js"></script>
+        <script src="../Scripts/foodtrade.js"></script>
+        <script>
+            $.FTCommon.LoadList("product");
+        </script>
+        <hr />
+        <footer>
+            <p>&copy; 2016 - Angelo Lopez Application</p>
+        </footer>
+    </div>
+</body>
+</html>

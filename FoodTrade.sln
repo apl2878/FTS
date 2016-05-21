@@ -1,0 +1,80 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25123.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebAPI2", "WebAPI2\WebAPI2.csproj", "{C6EEE1E9-9A43-4282-B1CD-4AD0EAA80AB3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Libraries", "Libraries", "{FE488414-498B-4C17-A985-0033A134AFE5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FoodTrade.BLL", "FoodTrade.BLL\FoodTrade.BLL.csproj", "{6C95003C-5463-4CFD-9DCB-2FD6605E758C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FoodTrade.DAL", "FoodTrade.DAL\FoodTrade.DAL.csproj", "{CA4ED6A4-7D6A-410D-B2EC-A05186D72378}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FoodTrade.Entity", "FoodTrade.Entity\FoodTrade.Entity.csproj", "{44C75E49-8C32-4ADF-8BAE-E475B1D55733}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FoodTrade.Common", "FoodTrade.Common\FoodTrade.Common.csproj", "{A2E22997-EA85-415A-9FB1-CEFBA152BF6A}"
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "Website", "Website", "{1944E700-5AE9-47EC-A3A0-FE7BC1057231}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.5.2"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_21381"
+		Debug.AspNetCompiler.PhysicalPath = "Website\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_21381\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_21381"
+		Release.AspNetCompiler.PhysicalPath = "Website\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_21381\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "21381"
+		SlnRelativePath = "Website\"
+		DefaultWebSiteLanguage = "Visual C#"
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C6EEE1E9-9A43-4282-B1CD-4AD0EAA80AB3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C6EEE1E9-9A43-4282-B1CD-4AD0EAA80AB3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C6EEE1E9-9A43-4282-B1CD-4AD0EAA80AB3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C6EEE1E9-9A43-4282-B1CD-4AD0EAA80AB3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6C95003C-5463-4CFD-9DCB-2FD6605E758C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6C95003C-5463-4CFD-9DCB-2FD6605E758C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6C95003C-5463-4CFD-9DCB-2FD6605E758C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6C95003C-5463-4CFD-9DCB-2FD6605E758C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CA4ED6A4-7D6A-410D-B2EC-A05186D72378}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CA4ED6A4-7D6A-410D-B2EC-A05186D72378}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CA4ED6A4-7D6A-410D-B2EC-A05186D72378}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CA4ED6A4-7D6A-410D-B2EC-A05186D72378}.Release|Any CPU.Build.0 = Release|Any CPU
+		{44C75E49-8C32-4ADF-8BAE-E475B1D55733}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{44C75E49-8C32-4ADF-8BAE-E475B1D55733}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{44C75E49-8C32-4ADF-8BAE-E475B1D55733}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{44C75E49-8C32-4ADF-8BAE-E475B1D55733}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A2E22997-EA85-415A-9FB1-CEFBA152BF6A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A2E22997-EA85-415A-9FB1-CEFBA152BF6A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A2E22997-EA85-415A-9FB1-CEFBA152BF6A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A2E22997-EA85-415A-9FB1-CEFBA152BF6A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1944E700-5AE9-47EC-A3A0-FE7BC1057231}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1944E700-5AE9-47EC-A3A0-FE7BC1057231}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1944E700-5AE9-47EC-A3A0-FE7BC1057231}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{1944E700-5AE9-47EC-A3A0-FE7BC1057231}.Release|Any CPU.Build.0 = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{6C95003C-5463-4CFD-9DCB-2FD6605E758C} = {FE488414-498B-4C17-A985-0033A134AFE5}
+		{CA4ED6A4-7D6A-410D-B2EC-A05186D72378} = {FE488414-498B-4C17-A985-0033A134AFE5}
+		{44C75E49-8C32-4ADF-8BAE-E475B1D55733} = {FE488414-498B-4C17-A985-0033A134AFE5}
+		{A2E22997-EA85-415A-9FB1-CEFBA152BF6A} = {FE488414-498B-4C17-A985-0033A134AFE5}
+	EndGlobalSection
+EndGlobal
